@@ -19,8 +19,6 @@ while (selectedNumber != secretNumber) {
     }
 }
 
-if (counter > 1) {
-    alert(`Isso ai! Você descobriu o número secreto ${secretNumber} com ${counter} tentativas.`);
-} else {
-    alert(`Isso ai! Você descobriu o número secreto ${secretNumber} com ${counter} tentativa.`);
-}
+// Operador ternário
+let wordCounter = counter > 1 ? 'tentativas' : 'tentativa';
+alert(`Isso ai! Você descobriu o número secreto ${secretNumber} com ${counter} ${wordCounter}.`);
