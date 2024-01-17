@@ -1,11 +1,11 @@
 alert('Bem vindo ao jogo do número secreto');
-let secretNumber = 5;
+let secretNumber = parseInt(Math.random() * 100 + 1);
 let selectedNumber;
 
 let counter = 1;
 // enquanto não acertar
 while (selectedNumber != secretNumber) {
-    selectedNumber = prompt('Escolha um número entre 1 e 10');
+    selectedNumber = prompt('Escolha um número entre 1 e 100');
     // comparando o número secreto e o número escolhido
     if (selectedNumber == secretNumber) {
         break;
