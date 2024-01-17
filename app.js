@@ -6,5 +6,9 @@ let selectedNumber = prompt('Escolha um número entre 1 e 10');
 if (selectedNumber == secretNumber) {
     alert(`Parabéns, você acertou: ${secretNumber}`);
 } else {
-    alert('Você errou!')
+    if (selectedNumber > secretNumber) {
+        alert(`O número secreto é menor que ${selectedNumber}`);
+    } else {
+        alert(`O número secreto é maior que ${selectedNumber}`);
+    }
 }
