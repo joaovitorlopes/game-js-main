@@ -64,6 +64,10 @@ body::before {
     margin-top: 16px;
 }
 
+.container__botao:hover {
+    cursor: pointer;
+}
+
 .container__texto {
     margin: 16px 0 16px 0;
 }

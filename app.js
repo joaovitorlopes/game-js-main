@@ -1,10 +1,14 @@
 var setDivVisibility = (value) => document.getElementById('containerPage').style.visibility = value;
 
+var reloadButton = document.getElementById('reloadButton');
+reloadButton.addEventListener("click", () => {
+    window.location.reload();
+});
+
 async function start() {
     alert('Bem vindo ao jogo do número secreto');
     let max = 1000;
-    // let secretNumber = parseInt(Math.random() * max + 1);
-    let secretNumber = 5;
+    let secretNumber = parseInt(Math.random() * max + 1);
     let selectedNumber;
 
     let counter = 1;
